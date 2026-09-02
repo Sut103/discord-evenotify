@@ -1,5 +1,6 @@
-# EvePing for Discord
+# discord-evenotify
 
+<img width="2000" height="744" src="https://github.com/user-attachments/assets/593e69b4-0a48-410b-8ff6-b606f0e560ca" />
 DiscordのScheduled Eventの前日に、「興味あり」を押したユーザーへ個別DMでリマインドを送る常駐Botです。DB／KVストアを持たない完全ステートレス構成で、1日1回のバッチが起動中の全ギルドを走査します。
 
 ## セットアップ
