@@ -3,7 +3,7 @@ package batch
 import (
 	"fmt"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 // SendReminderDM sends a single reminder DM and returns any failure to the

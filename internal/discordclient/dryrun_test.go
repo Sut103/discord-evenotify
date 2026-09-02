@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 func TestDryRunClient_SendDM_DoesNotCallUnderlyingSendDM(t *testing.T) {

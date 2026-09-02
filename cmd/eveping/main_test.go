@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/batch"
+	"github.com/Sut103/discord-evenotify/internal/batch"
 )
 
 func TestLoadToken_MissingEnv_ReturnsError(t *testing.T) {

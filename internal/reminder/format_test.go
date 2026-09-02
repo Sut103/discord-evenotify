@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
-	"github.com/Sut103/EvePing-for-Discord/internal/reminder"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/reminder"
 )
 
 func TestFormatReminder_IncludesNameStartTimeAndURL(t *testing.T) {

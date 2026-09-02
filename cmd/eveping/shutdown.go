@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/scheduler"
+	"github.com/Sut103/discord-evenotify/internal/scheduler"
 )
 
 // waitAndStop blocks until a shutdown signal arrives on sigCh, then stops

@@ -5,14 +5,14 @@ created: 2026-08-18T15:35:12Z
 updated: 2026-08-19T13:47:22Z
 progress: 100%
 prd: .claude/prds/dockerize.md
-github: https://github.com/Sut103/EvePing-for-Discord/issues/20
+github: https://github.com/Sut103/discord-evenotify/issues/20
 ---
 
 # Epic: dockerize
 
 ## Overview
 
-EvePingをコンテナイメージとして起動できるようにする。既存のアプリケーションロジック（`cmd/eveping`, `internal/*`）には一切手を入れず、マルチステージビルドの `Dockerfile`・`.dockerignore`・開発用 `docker-compose.yml`・README追記のみを追加する、純粋にデプロイ手段を追加するインフラ変更。
+discord-evenotifyをコンテナイメージとして起動できるようにする。既存のアプリケーションロジック（`cmd/eveping`, `internal/*`）には一切手を入れず、マルチステージビルドの `Dockerfile`・`.dockerignore`・開発用 `docker-compose.yml`・README追記のみを追加する、純粋にデプロイ手段を追加するインフラ変更。
 
 ## Architecture Decisions
 
@@ -110,4 +110,4 @@ Estimated total effort: 5.5 hours
 
 **追記(簡素化)**: CLAUDE.mdのTDD方針スコープ限定(アプリケーションコードのみ)を受け、実装当時に書いていた静的アサーションテスト(`dockerbuild/`パッケージ、4ファイル・11テスト)は削除した。理由・実施記録は各タスクファイル・Test Strategy節参照。`go build ./...` / `go vet ./...` / `go test ./...` は削除後も全て成功。
 
-**訂正**: 当初「この実行環境にDockerデーモンが無い」と記載していたが誤りだった。`dockerd` バイナリは実装セッションの環境に存在し、手動起動できることを確認した。ただし起動したdockerdで実際に `docker build .` を試みたところ、サンドボックス固有のネットワーク制約(アウトバウンドHTTPSを透過的にインターセプトするプロキシがビルドコンテナ内から信頼されずAlpineの `apk add ca-certificates` がTLS検証エラーになる、およびDocker Hub匿名pullのレート制限)によりローカルでは成功しなかった。一方、GitHub Actions CI(サンドボックス外の通常のネットワーク環境)では `docker build .` ステップが実際に成功している([確認済みの実行](https://github.com/Sut103/EvePing-for-Discord/actions/runs/32193894776/job/95893861685)、20秒で完了) — これがDockerfile自体の正当性を示す実際の検証結果である。`docker run` によるDiscordへの実接続確認(実トークンが必要)と `docker compose up` の実起動確認は未実施のまま。`docker compose config` の静的パースはこの環境で確認済み。
+**訂正**: 当初「この実行環境にDockerデーモンが無い」と記載していたが誤りだった。`dockerd` バイナリは実装セッションの環境に存在し、手動起動できることを確認した。ただし起動したdockerdで実際に `docker build .` を試みたところ、サンドボックス固有のネットワーク制約(アウトバウンドHTTPSを透過的にインターセプトするプロキシがビルドコンテナ内から信頼されずAlpineの `apk add ca-certificates` がTLS検証エラーになる、およびDocker Hub匿名pullのレート制限)によりローカルでは成功しなかった。一方、GitHub Actions CI(サンドボックス外の通常のネットワーク環境)では `docker build .` ステップが実際に成功している([確認済みの実行](https://github.com/Sut103/discord-evenotify/actions/runs/32193894776/job/95893861685)、20秒で完了) — これがDockerfile自体の正当性を示す実際の検証結果である。`docker run` によるDiscordへの実接続確認(実トークンが必要)と `docker compose up` の実起動確認は未実施のまま。`docker compose config` の静的パースはこの環境で確認済み。
