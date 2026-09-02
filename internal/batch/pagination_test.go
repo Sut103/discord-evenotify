@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/batch"
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/batch"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 func TestFetchAllInterestedUsers_NoUsers_ReturnsEmpty(t *testing.T) {

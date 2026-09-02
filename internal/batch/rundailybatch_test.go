@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/batch"
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/batch"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 func TestRunDailyBatch_AllCombinations_DMsAttempted(t *testing.T) {

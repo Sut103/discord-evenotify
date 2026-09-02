@@ -5,7 +5,7 @@ package reminder
 import (
 	"fmt"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 // FormatReminder builds the DM body for an upcoming event: its name, start

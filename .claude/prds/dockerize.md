@@ -1,6 +1,6 @@
 ---
 name: dockerize
-description: EvePingをDocker化し、コンテナイメージとして起動できるようにする
+description: discord-evenotifyをDocker化し、コンテナイメージとして起動できるようにする
 status: backlog
 created: 2026-08-18T15:35:12Z
 ---
@@ -9,7 +9,7 @@ created: 2026-08-18T15:35:12Z
 
 ## Executive Summary
 
-EvePing（Go + discordgo製の常駐Bot）は現状、ビルド済みバイナリを直接実行する運用のみを想定している（VPS等で `go build` 済みバイナリを常駐させる）。本PRDでは、EvePingをコンテナイメージとして配布・起動できるようにする。マルチステージビルドの `Dockerfile` を追加し、Botトークンはイメージにベイクせず環境変数で注入する。GitHub Issue #20 に対応する。
+discord-evenotify（Go + discordgo製の常駐Bot）は現状、ビルド済みバイナリを直接実行する運用のみを想定している（VPS等で `go build` 済みバイナリを常駐させる）。本PRDでは、discord-evenotifyをコンテナイメージとして配布・起動できるようにする。マルチステージビルドの `Dockerfile` を追加し、Botトークンはイメージにベイクせず環境変数で注入する。GitHub Issue #20 に対応する。
 
 ## Problem Statement
 

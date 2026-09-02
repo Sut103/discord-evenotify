@@ -1,4 +1,4 @@
-module github.com/Sut103/EvePing-for-Discord
+module github.com/Sut103/discord-evenotify
 
 go 1.24.7
 

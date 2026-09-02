@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 func TestFake_SatisfiesClientInterface(t *testing.T) {

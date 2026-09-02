@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
-	"github.com/Sut103/EvePing-for-Discord/internal/reminder"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/reminder"
 )
 
 // BatchResult summarizes the outcome of one RunDailyBatch execution.

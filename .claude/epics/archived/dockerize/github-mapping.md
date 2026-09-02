@@ -1,13 +1,13 @@
 # GitHub Issue Mapping
 
-Epic: #20 - https://github.com/Sut103/EvePing-for-Discord/issues/20
+Epic: #20 - https://github.com/Sut103/discord-evenotify/issues/20
 (既存のIssue #20「Docker化する」をそのままEpic issueとして採用。新規Epic issueは作成していない)
 
 Tasks:
-- #22: マルチステージDockerfile + .dockerignore の追加 - https://github.com/Sut103/EvePing-for-Discord/issues/22
-- #23: 開発用docker-compose.ymlの追加 - https://github.com/Sut103/EvePing-for-Discord/issues/23
-- #24: READMEへのDockerビルド・起動手順の追記 - https://github.com/Sut103/EvePing-for-Discord/issues/24
-- #25: CIへのdocker buildビルド検証ステップ追加 - https://github.com/Sut103/EvePing-for-Discord/issues/25
+- #22: マルチステージDockerfile + .dockerignore の追加 - https://github.com/Sut103/discord-evenotify/issues/22
+- #23: 開発用docker-compose.ymlの追加 - https://github.com/Sut103/discord-evenotify/issues/23
+- #24: READMEへのDockerビルド・起動手順の追記 - https://github.com/Sut103/discord-evenotify/issues/24
+- #25: CIへのdocker buildビルド検証ステップ追加 - https://github.com/Sut103/discord-evenotify/issues/25
 
 Synced: 2026-08-18T15:57:29Z
 

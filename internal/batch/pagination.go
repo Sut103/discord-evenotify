@@ -1,6 +1,6 @@
 package batch
 
-import "github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+import "github.com/Sut103/discord-evenotify/internal/discordclient"
 
 // eventUsersPageSize is the maximum number of users Discord returns per
 // EventUsers call.

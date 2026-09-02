@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/scheduler"
+	"github.com/Sut103/discord-evenotify/internal/scheduler"
 )
 
 func TestWaitAndStop_SignalStopsScheduler(t *testing.T) {

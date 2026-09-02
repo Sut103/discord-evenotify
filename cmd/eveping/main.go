@@ -15,9 +15,9 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/batch"
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
-	"github.com/Sut103/EvePing-for-Discord/internal/scheduler"
+	"github.com/Sut103/discord-evenotify/internal/batch"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/scheduler"
 )
 
 const (

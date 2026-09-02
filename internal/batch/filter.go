@@ -5,7 +5,7 @@ package batch
 import (
 	"time"
 
-	"github.com/Sut103/EvePing-for-Discord/internal/discordclient"
+	"github.com/Sut103/discord-evenotify/internal/discordclient"
 )
 
 // FilterTargetEvents returns the events starting "tomorrow" (UTC calendar
